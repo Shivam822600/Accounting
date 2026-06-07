@@ -15,24 +15,54 @@ export const services = [
     title: 'Bookkeeping and Accounting Service',
     navLabel: 'Bookkeeping and Accounting',
     seoTitle: 'Bookkeeping & Accounting Melbourne | RPS Accountants',
-    subtitle: 'Melbourne bookkeeping and accounting services for small business.',
+    subtitle: 'Melbourne Bookkeeping & Accounting Services for Small Business',
     image: siteAssets.advisory,
     summary:
-      'A key part of running a business is managing bookkeeping and accounting processes so you can understand your numbers and predict the future course of the business.',
+      'A key part of running a business is managing bookkeeping and accounting processes so you can understand your numbers and predict the future course of the business. Additionally, we make use of the latest bookkeeping and accounting software (like Xero, MYOB, and QuickBooks) to ensure the most precise and accurate results.',
+    intro:
+      'Our bookkeeping and accounting services help Australian companies meet ongoing compliance requirements while maintaining accurate financial records. We oversee daily bookkeeping, reconciliations, payroll, Single Touch Payroll (STP) reporting, superannuation obligations, and related ATO filings. We reduce administrative burden, minimize errors, and ensure companies confidently fulfill their employer obligations.',
     sections: [
       {
-        title: 'Bookkeeping and Accounting Service in Melbourne',
-        body:
-          'Our bookkeeping and accounting services help Australian companies meet ongoing compliance requirements while maintaining accurate financial records. We oversee daily bookkeeping, reconciliations, payroll, Single Touch Payroll reporting, superannuation obligations and related ATO filings.',
+        title: 'Tax & ATO Compliance Services Offered',
+        items: [
+          'Income Tax (BAS, IAS & PAYG)',
+          'Goods and Services Tax (GST) & GST Consulting',
+          'Fringe Benefits Tax (FBT)',
+          'Capital Gains Tax (CGT)',
+          'International Tax Matters',
+          'Small Business Tax Concessions',
+          'Tax Planning and Minimisation',
+          'Obtaining ATO Rulings',
+          'Managing and Preparing for Tax Audits',
+        ],
       },
       {
-        title: 'What We Cover',
+        title: 'Business Advisory & Growth',
         items: [
-          'Management and financial accounting',
-          'Budgeting and forecasting',
-          'Accounting software selection and training',
-          'Payroll, STP and superannuation compliance',
-          'ATO reporting and reconciliations',
+          'Business Start-Up Advice',
+          'Strategic Business Planning',
+          'Business Restructuring',
+          'Business Sales and Acquisitions',
+          'Succession Planning',
+          'Finance Applications and Submissions',
+        ],
+      },
+      {
+        title: 'Superannuation & Wealth Planning',
+        items: [
+          'Superannuation Planning',
+          'Self-Managed Superannuation Funds (SMSF) Setup & Compliance',
+          'SMSF Establishment & Salary Packaging',
+          'Financial and Retirement Planning',
+          'Estate Planning',
+        ],
+      },
+      {
+        title: 'Accounting & Financial Reporting',
+        items: [
+          'Management and Financial Accounting',
+          'Budgeting and Forecasting',
+          'Accounting Software Selection and Training',
         ],
       },
     ],
@@ -42,24 +72,33 @@ export const services = [
     title: 'Taxation Service',
     navLabel: 'Taxation Service',
     seoTitle: 'Tax Returns & Taxation Services Melbourne | RPS Accountants',
-    subtitle: 'Professional taxation and tax return services in Melbourne.',
+    subtitle: 'Professional Taxation & Tax Return Services in Melbourne',
     image: siteAssets.tax,
     summary:
-      'We add value by providing expert tax advice and sound business ideas to help you create and protect your wealth.',
+      'We add value by providing expert tax advice and sound business ideas to help you create and protect your wealth. Your tax obligations alter over time, and getting the appropriate advice at the right moment is essential to ensure you achieve compliance requirements while taking advantage of superior tax planning options.',
+    intro:
+      'RPS Accountants is a registered tax agent, meaning we are fully qualified to represent you in dealings with the ATO. We handle tax return preparation and lodgement for individuals, sole traders, partnerships, companies, and trusts across Melbourne. From simple salary-and-wage returns to complex corporate structures, we ensure every deduction is maximized legally.',
     sections: [
       {
-        title: 'Taxation Service in Melbourne',
-        body:
-          'Your business and personal circumstances change over time, and changing tax regulations bring new responsibilities. Our tax experience helps you meet compliance requirements while taking advantage of practical tax planning opportunities.',
+        title: 'Taxation & Compliance Core Areas',
+        items: [
+          'Income Tax Return Preparation & Lodgement',
+          'Business Activity Statements (BAS) & Installment Activity Statements (IAS)',
+          'Goods and Services Tax (GST) setup & lodgements',
+          'Fringe Benefits Tax (FBT) compliance & salary packaging',
+          'Capital Gains Tax (CGT) advice for property & shares',
+          'Small business tax concessions & structural review',
+          'Managing and preparing for ATO audits & reviews',
+          'Obtaining custom ATO private rulings & amendments',
+        ],
       },
       {
-        title: 'Tax and ATO Compliance',
+        title: 'Individual & Investor Tax Services',
         items: [
-          'Income tax, BAS, IAS and PAYG',
-          'GST consulting and lodgement',
-          'Fringe Benefits Tax and Capital Gains Tax',
-          'Small business tax concessions',
-          'ATO rulings and audit support',
+          'Personal tax returns with maximized work-related deductions',
+          'Rental property depreciation & negative gearing advice',
+          'Sole trader ABN tax returns',
+          'Late or multi-year overdue tax lodgements',
         ],
       },
     ],
@@ -69,24 +108,30 @@ export const services = [
     title: 'Business Advisory Service',
     navLabel: 'Business Advisory',
     seoTitle: 'Business Advisory Services Melbourne | RPS Accountants',
-    subtitle: 'Strategic business advisory for Melbourne SMEs and startups.',
+    subtitle: 'Strategic Business Advisory for Melbourne SMEs and Startups',
     image: siteAssets.audit,
     summary:
-      'Our advisory team creates practical, personalised solutions for client business needs and supports GST, BAS and compliance obligations.',
+      'From business structuring to GST strategy and growth planning — RPS Accountants delivers practical business advisory services for Melbourne entrepreneurs and growing companies. We help clients overcome business challenges, clarify reporting obligations, and make confident decisions.',
+    intro:
+      'We believe accounting should look forward, not just backward. Our business advisory services provide you with clear reporting, regular performance reviews, cash flow projections, and structure optimization. Whether you are launching a startup or looking to scale up, we provide structured support aligned with your goals.',
     sections: [
       {
-        title: 'Business Advisory Service in Australia',
-        body:
-          'We provide a comprehensive set of services to help clients overcome business challenges, clarify reporting obligations and make confident decisions about growth, compliance and structure.',
+        title: 'Business Startup & Structuring',
+        items: [
+          'ABN, TFN, GST, and PAYG registration setup',
+          'Company, Trust, Partnership, or Sole Trader structural advice',
+          'Business plan creation and budgeting setup',
+          'Corporate secretarial services & ASIC compliance',
+        ],
       },
       {
-        title: 'GST and BAS Services',
+        title: 'Growth & Strategy Services',
         items: [
-          'GST registration and reporting guidance',
-          'Business Activity Statement preparation and lodgement',
-          'GST transaction review and reconciliation',
-          'Deadline monitoring and ATO query support',
-          'BAS amendments and corrections when required',
+          'Regular cash flow forecasting and management',
+          'Key Performance Indicator (KPI) tracking & reporting',
+          'Break-even and profitability analysis',
+          'Succession planning and business sale preparation',
+          'Finance applications & bank submission preparation',
         ],
       },
     ],
@@ -96,24 +141,31 @@ export const services = [
     title: 'SMSF Accountants',
     navLabel: 'SMSF',
     seoTitle: 'SMSF Accountant & Super Fund Services Melbourne | RPS',
-    subtitle: 'SMSF accounting and administration services for Melbourne investors.',
+    subtitle: 'Self-Managed Super Fund (SMSF) Accounting & Administration',
     image: siteAssets.smsf,
     summary:
-      'RPS Accountants supports clients with self-managed super fund compliance, accurate reporting and practical superannuation guidance.',
+      'Thinking about a self-managed super fund? RPS Accountants provides SMSF setup, annual compliance, and ongoing administration for Melbourne clients. We work closely with you to support fund compliance, employer obligations, and accurate reporting.',
+    intro:
+      'SMSFs offer incredible flexibility and control over your retirement wealth, but they come with strict ATO regulations and auditing requirements. Our SMSF team handles all the heavy lifting — from the initial fund setup and deed registration to annual tax returns and coordinating the independent audit.',
     sections: [
       {
-        title: 'Superannuation and SMSF Services in Melbourne',
-        body:
-          'Self-managed super funds can be powerful, but complying with superannuation laws can be challenging. We work closely with clients to support fund compliance, employer obligations and accurate reporting aligned with financial objectives.',
+        title: 'SMSF Setup & Administration',
+        items: [
+          'Trust deed preparation & Corporate Trustee setup',
+          'TFN, ABN, and bank account registrations for the fund',
+          'Rollover facilitation from industry/retail funds',
+          'Annual financial statement & member statement preparation',
+          'SMSF annual return preparation and lodgement with the ATO',
+          'Coordination of mandatory annual independent SMSF audit',
+        ],
       },
       {
-        title: 'SMSF Support',
+        title: 'Strategic Superannuation Support',
         items: [
-          'SMSF establishment guidance',
-          'Annual compliance and administration',
-          'Superannuation planning',
-          'Employer superannuation obligations',
-          'Retirement and estate planning coordination',
+          'Contribution limits monitoring (concessional & non-concessional)',
+          'Pension phase transition planning & administration',
+          'Limited Recourse Borrowing Arrangements (LRBA) review for property',
+          'SMSF compliance advice & ATO audit representation',
         ],
       },
     ],
@@ -123,24 +175,22 @@ export const services = [
     title: 'Medical Accountants',
     navLabel: 'Medical Accountants',
     seoTitle: 'Medical Accountants in Melbourne | Health Professionals Tax | RPS',
-    subtitle: 'Specialist medical accountants for Melbourne health professionals.',
+    subtitle: 'Specialist Medical Accountants for Melbourne Health Professionals',
     image: siteAssets.medical,
     summary:
-      'We support healthcare professionals with GST, BAS, payroll, structuring, cash flow planning and ATO compliance.',
+      'Handling and running a medical practice is already challenging; its accounting and company tax returns shouldn’t add to the stress. We support healthcare professionals with GST, BAS, payroll, structuring, cash flow planning, and ATO compliance.',
+    intro:
+      'From managing GST, BAS, and payroll obligations to assisting with business structuring, cash flow planning, and ATO compliance, we offer practical and proactive support aligned with the needs of the healthcare sector. Whether you are operating as a sole practitioner, part of a partnership, or running a growing medical practice, our experienced advisors deliver personalized solutions designed to protect your interests and support sustainable growth.',
     sections: [
       {
-        title: 'Accounting Services for Healthcare Firms',
-        body:
-          'Whether you operate as a sole practitioner, partnership or growing medical practice, our advisors provide practical accounting support designed to protect your interests and support sustainable growth.',
-      },
-      {
-        title: 'Professional and Reliable Accounting Services',
+        title: 'Healthcare Specialty Services',
         items: [
-          'Bookkeeping for medical practices',
-          'Tax return preparation and lodgement',
-          'Medical sector tax consulting',
-          'Cash flow planning',
-          'Dedicated accountant support',
+          'Bookkeeping and payroll processing for medical practices',
+          'Tax return preparation and lodgement for doctors, dentists, and allied health',
+          'Service trust structures and income-splitting strategy',
+          'Equipment finance and practice fit-out tax deductions',
+          'Cash flow planning & medical sector tax consulting',
+          'Dedicated accountant support for medical practitioners',
         ],
       },
     ],

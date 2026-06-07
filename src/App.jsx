@@ -5,7 +5,11 @@ import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
 import Contact from './pages/Contact.jsx';
 import ServicesIndex from './pages/services/ServicesIndex.jsx';
-import ServiceDetail from './pages/services/ServiceDetail.jsx';
+import BookkeepingAccounting from './pages/services/Bookeeping.jsx';
+import TaxationService from './pages/services/TaxationService.jsx';
+import BusinessAdvisory from './pages/services/BussinessAdvisory.jsx';
+import SMSFServices from './pages/services/SMSF.jsx';
+import MedicalAccountants from './pages/services/MedicalAccountant.jsx';
 import LocationsIndex from './pages/locations/LocationsIndex.jsx';
 import LocationDetail from './pages/locations/LocationDetail.jsx';
 import NotFound from './pages/NotFound.jsx';
@@ -26,7 +30,11 @@ export default function App() {
         <Route path="contact.html" element={<Contact />} />
         <Route path="services" element={<ServicesIndex />} />
         <Route path="Services/main.html" element={<Navigate to="/services" replace />} />
-        <Route path="services/:slug" element={<ServiceDetail />} />
+        <Route path="services/bookkeeping-accounting" element={<BookkeepingAccounting />} />
+        <Route path="services/taxation" element={<TaxationService />} />
+        <Route path="services/business-advisory" element={<BusinessAdvisory />} />
+        <Route path="services/smsf-accountants" element={<SMSFServices />} />
+        <Route path="services/medical-accountants" element={<MedicalAccountants />} />
         <Route path="locations" element={<LocationsIndex />} />
         <Route path="locations/:slug" element={<LocationDetail />} />
         {legacyServiceRoutes.map((route) => (
