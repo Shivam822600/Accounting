@@ -10,7 +10,7 @@ import TaxationService from './pages/services/TaxationService.jsx';
 import BusinessAdvisory from './pages/services/BussinessAdvisory.jsx';
 import SMSFServices from './pages/services/SMSF.jsx';
 import MedicalAccountants from './pages/services/MedicalAccountant.jsx';
-import LocationsIndex from './pages/locations/LocationsIndex.jsx';
+import LocationSection from './pages/locations/LocationSection.jsx';
 import LocationDetail from './pages/locations/LocationDetail.jsx';
 import NotFound from './pages/NotFound.jsx';
 import { legacyLocationRoutes, legacyServiceRoutes } from './routes/legacyRoutes.js';
@@ -35,7 +35,7 @@ export default function App() {
         <Route path="services/business-advisory" element={<BusinessAdvisory />} />
         <Route path="services/smsf-accountants" element={<SMSFServices />} />
         <Route path="services/medical-accountants" element={<MedicalAccountants />} />
-        <Route path="locations" element={<LocationsIndex />} />
+        <Route path="locations" element={<LocationSection />} />
         <Route path="locations/:slug" element={<LocationDetail />} />
         {legacyServiceRoutes.map((route) => (
           <Route

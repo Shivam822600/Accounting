@@ -53,20 +53,20 @@ export default function Home() {
     <>
       <Hero
         title="Melbourne's Trusted Tax Accountant & Business Accounting Firm"
-        subtitle="RPS Accountants & Business Advisors is a registered Melbourne accounting firm providing expert tax returns, BAS lodgement, bookkeeping, SMSF, and business advisory services for individuals, sole traders, and growing businesses across Melbourne City and surrounds. Tax Agent No. 16657196248."
+        subtitle="Capital Edge Accounting & Business Advisors is a registered Melbourne accounting firm providing expert tax returns, BAS lodgement, bookkeeping, SMSF, and business advisory services for individuals, sole traders, and growing businesses across Melbourne City and surrounds. Tax Agent No. 16657196248."
         image={siteAssets.homeHero}
       />
 
       <section className="section bg-white">
         <div className="container-page grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
-          <img src={siteAssets.about} alt="About RPS Accountants" className="rounded-md object-cover shadow-soft w-full h-auto" loading="lazy" />
+          <img src={siteAssets.about} alt="About Capital Edge Accounting" className="rounded-md object-cover shadow-soft w-full h-auto" loading="lazy" />
           <div>
             <SectionHeader
-              eyebrow="About RPS"
+              eyebrow="About Capital Edge"
               title="Melbourne's Trusted Accounting Partner Since 2022"
             />
             <p className="body-copy">
-              At RPS Accountants & Business Advisors, we believe accounting should work for you not the other way around. We’re a Melbourne-based firm of CPA-qualified accountants and registered tax agents who specialise in making tax season stress-free for individuals, families, and small-to-medium businesses across the city.
+              At Capital Edge Accounting & Business Advisors, we believe accounting should work for you not the other way around. We’re a Melbourne-based firm of CPA-qualified accountants and registered tax agents who specialise in making tax season stress-free for individuals, families, and small-to-medium businesses across the city.
             </p>
             <p className="body-copy mt-4">
               Whether you’re lodging a personal return, setting up an SMSF, managing payroll, or planning your next business move our team brings the expertise, technology, and genuine care to get it right, every time.
@@ -106,7 +106,7 @@ export default function Home() {
       <section className="section bg-white border-t border-slate-100">
         <div className="container-page">
           <div className="text-center mb-12">
-            <span className="rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold">Why RPS</span>
+            <span className="rounded-full bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold">Why Capital Edge</span>
             <h2 className="heading-lg mt-4">Why Melbourne clients choose us</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -250,7 +250,7 @@ export default function Home() {
               allowFullScreen="" 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="RPS Accountants & Business Advisors Google Map Location"
+              title="Capital Edge Accounting & Business Advisors Google Map Location"
             />
           </div>
         </div>

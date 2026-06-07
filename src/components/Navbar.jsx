@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { contact, locations, services } from '../data/siteData.js';
 import { siteAssets } from '../assets/siteAssets.js';
+import Logo from './Logo.jsx';
 
 const mainLinks = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about' },
-  { label: 'Blog', to: '/blog' },
+  // { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: '/contact' },
 ];
 
@@ -20,8 +21,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md border-b border-slate-100">
       <div className="container-page flex h-20 items-center justify-between px-5 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-3" aria-label="RPS Accountants home">
-          <img src={siteAssets.logo} alt="RPS Accountants" className="h-14 w-auto brightness-0" loading="eager" />
+        <Link to="/" className="flex items-center" aria-label="Capital Edge Accounting home">
+          <Logo className="h-12" />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
@@ -30,31 +31,13 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
-          <div className="group relative">
-            <button type="button" className={`${linkClasses({ isActive: false })} cursor-default flex items-center gap-1 focus:outline-none`}>
-              Location
-              <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div className="invisible absolute left-1/2 top-full w-56 -translate-x-1/2 pt-5 opacity-0 transition group-hover:visible group-hover:opacity-100">
-              <div className="rounded-md bg-white p-2 shadow-soft border border-slate-100">
-                {locations.map((location) => (
-                  <Link
-                    key={location.slug}
-                    to={`/locations/${location.slug}`}
-                    className="block rounded px-4 py-2 text-sm font-semibold text-ink hover:bg-mint hover:text-navy whitespace-nowrap"
-                  >
-                    {location.slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
+          <NavLink to="/locations" className={linkClasses}>
+            Locations
+          </NavLink>
           <div className="group relative">
             <NavLink to="/services" className={({ isActive }) => `${linkClasses({ isActive })} flex items-center gap-1`}>
               Services
-              <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </NavLink>
@@ -97,7 +80,7 @@ export default function Navbar() {
       {open && (
         <nav className="border-t border-slate-100 bg-white px-5 pb-6 lg:hidden" aria-label="Mobile navigation">
           <div className="container-page grid gap-2 pt-3">
-            {[...mainLinks, { label: 'Services', to: '/services' }, { label: 'Locations', to: '/locations/epping' }].map(
+            {[...mainLinks.slice(0, 2), { label: 'Services', to: '/services' }, { label: 'Locations', to: '/locations' }, ...mainLinks.slice(2)].map(
               (link) => (
                 <NavLink
                   key={link.to}

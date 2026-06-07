@@ -27,7 +27,7 @@ export default function Contact() {
       </section>
       <section className="h-[420px] bg-slate-100">
         <iframe
-          title="RPS Accountants location"
+          title="Capital Edge Accounting location"
           src="https://www.google.com/maps?q=136%20Gateway%20Boulevard%2C%20Epping%2C%20VIC%2C%203076&output=embed"
           className="h-full w-full border-0"
           loading="lazy"

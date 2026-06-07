@@ -9,7 +9,7 @@ const TaxationService = () => {
     title: "Taxation Service",
     subtitle: "Professional Taxation & Tax Return Services in Melbourne",
     summary: "Providing expert tax advice and sound business ideas to help you create and protect your wealth.",
-    intro: "RPS Accountants is a registered tax agent serving individuals, sole traders, and businesses.",
+    intro: "Capital Edge Accounting is a registered tax agent serving individuals, sole traders, and businesses.",
     sections: []
   };
 
@@ -46,6 +46,23 @@ const TaxationService = () => {
                   </span>
                 ))}
               </div>
+            </div>
+            <div className="border-t border-navy/10 pt-6 mt-6">
+              <p className="text-xs font-bold uppercase text-navy/60 tracking-wider mb-3">Service Guarantees</p>
+              <ul className="space-y-3 text-xs text-navy/80 font-semibold">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  TPB Registered Agent (No. 16657196248)
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Fast 5-Day Tax Return Turnaround
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  ATO Audit Support & Safe Lodgement
+                </li>
+              </ul>
             </div>
           </aside>
 

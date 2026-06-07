@@ -3,10 +3,10 @@ import { siteAssets } from '../assets/siteAssets.js';
 export const contact = {
   phone: '+61 1300 110 120',
   phoneHref: 'tel:+611300110120',
-  email: 'admin@rpsaccountants.com.au',
-  emailHref: 'mailto:admin@rpsaccountants.com.au',
+  email: 'admin@capitaledgeaccounting.com.au',
+  emailHref: 'mailto:admin@capitaledgeaccounting.com.au',
   address: '136 Gateway Boulevard, Epping, VIC, 3076',
-  calendly: 'https://calendly.com/ravi-rpsaccountants',
+  calendly: 'https://calendly.com/capitaledgeaccounting',
 };
 
 export const services = [
@@ -14,7 +14,7 @@ export const services = [
     slug: 'bookkeeping-accounting',
     title: 'Bookkeeping and Accounting Service',
     navLabel: 'Bookkeeping and Accounting',
-    seoTitle: 'Bookkeeping & Accounting Melbourne | RPS Accountants',
+    seoTitle: 'Bookkeeping & Accounting Melbourne | Capital Edge Accounting',
     subtitle: 'Melbourne Bookkeeping & Accounting Services for Small Business',
     image: siteAssets.advisory,
     summary:
@@ -71,13 +71,13 @@ export const services = [
     slug: 'taxation',
     title: 'Taxation Service',
     navLabel: 'Taxation Service',
-    seoTitle: 'Tax Returns & Taxation Services Melbourne | RPS Accountants',
+    seoTitle: 'Tax Returns & Taxation Services Melbourne | Capital Edge Accounting',
     subtitle: 'Professional Taxation & Tax Return Services in Melbourne',
     image: siteAssets.tax,
     summary:
       'We add value by providing expert tax advice and sound business ideas to help you create and protect your wealth. Your tax obligations alter over time, and getting the appropriate advice at the right moment is essential to ensure you achieve compliance requirements while taking advantage of superior tax planning options.',
     intro:
-      'RPS Accountants is a registered tax agent, meaning we are fully qualified to represent you in dealings with the ATO. We handle tax return preparation and lodgement for individuals, sole traders, partnerships, companies, and trusts across Melbourne. From simple salary-and-wage returns to complex corporate structures, we ensure every deduction is maximized legally.',
+      'Capital Edge Accounting is a registered tax agent, meaning we are fully qualified to represent you in dealings with the ATO. We handle tax return preparation and lodgement for individuals, sole traders, partnerships, companies, and trusts across Melbourne. From simple salary-and-wage returns to complex corporate structures, we ensure every deduction is maximized legally.',
     sections: [
       {
         title: 'Taxation & Compliance Core Areas',
@@ -107,11 +107,11 @@ export const services = [
     slug: 'business-advisory',
     title: 'Business Advisory Service',
     navLabel: 'Business Advisory',
-    seoTitle: 'Business Advisory Services Melbourne | RPS Accountants',
+    seoTitle: 'Business Advisory Services Melbourne | Capital Edge Accounting',
     subtitle: 'Strategic Business Advisory for Melbourne SMEs and Startups',
     image: siteAssets.audit,
     summary:
-      'From business structuring to GST strategy and growth planning — RPS Accountants delivers practical business advisory services for Melbourne entrepreneurs and growing companies. We help clients overcome business challenges, clarify reporting obligations, and make confident decisions.',
+      'From business structuring to GST strategy and growth planning — Capital Edge Accounting delivers practical business advisory services for Melbourne entrepreneurs and growing companies. We help clients overcome business challenges, clarify reporting obligations, and make confident decisions.',
     intro:
       'We believe accounting should look forward, not just backward. Our business advisory services provide you with clear reporting, regular performance reviews, cash flow projections, and structure optimization. Whether you are launching a startup or looking to scale up, we provide structured support aligned with your goals.',
     sections: [
@@ -140,11 +140,11 @@ export const services = [
     slug: 'smsf-accountants',
     title: 'SMSF Accountants',
     navLabel: 'SMSF',
-    seoTitle: 'SMSF Accountant & Super Fund Services Melbourne | RPS',
+    seoTitle: 'SMSF Accountant & Super Fund Services Melbourne | Capital Edge',
     subtitle: 'Self-Managed Super Fund (SMSF) Accounting & Administration',
     image: siteAssets.smsf,
     summary:
-      'Thinking about a self-managed super fund? RPS Accountants provides SMSF setup, annual compliance, and ongoing administration for Melbourne clients. We work closely with you to support fund compliance, employer obligations, and accurate reporting.',
+      'Thinking about a self-managed super fund? Capital Edge Accounting provides SMSF setup, annual compliance, and ongoing administration for Melbourne clients. We work closely with you to support fund compliance, employer obligations, and accurate reporting.',
     intro:
       'SMSFs offer incredible flexibility and control over your retirement wealth, but they come with strict ATO regulations and auditing requirements. Our SMSF team handles all the heavy lifting — from the initial fund setup and deed registration to annual tax returns and coordinating the independent audit.',
     sections: [
@@ -174,7 +174,7 @@ export const services = [
     slug: 'medical-accountants',
     title: 'Medical Accountants',
     navLabel: 'Medical Accountants',
-    seoTitle: 'Medical Accountants in Melbourne | Health Professionals Tax | RPS',
+    seoTitle: 'Medical Accountants in Melbourne | Health Professionals Tax | Capital Edge',
     subtitle: 'Specialist Medical Accountants for Melbourne Health Professionals',
     image: siteAssets.medical,
     summary:
@@ -213,7 +213,7 @@ export const locations = [
     slug: 'bundoora',
     legacy: 'bundoora.html',
     title: 'Tax Accountant Bundoora',
-    subtitle: 'RPS Accountants serving Melbourne north near La Trobe University.',
+    subtitle: 'Capital Edge Accounting serving Melbourne north near La Trobe University.',
     audience: ['Academics', 'Researchers', 'Healthcare workers', 'Consultants', 'Property investors'],
     services: ['Individual returns', 'Multiple income stream returns', 'Research stipend guidance', 'SMSF compliance', 'Business tax'],
     intro:
@@ -263,7 +263,7 @@ export const locations = [
     slug: 'whittlesea',
     legacy: 'whithleasea.html',
     title: 'Tax Accountant Whittlesea',
-    subtitle: 'RPS Accountants serving rural, regional and farm businesses across Whittlesea.',
+    subtitle: 'Capital Edge Accounting serving rural, regional and farm businesses across Whittlesea.',
     audience: ['Farm operators', 'Rural workers', 'Tradies', 'Property investors', 'Family businesses'],
     services: ['Farm business tax', 'Livestock valuation', 'FMD strategy', 'BAS and GST', 'Succession planning'],
     intro:

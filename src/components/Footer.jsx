@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { contact, services } from '../data/siteData.js';
 import { siteAssets } from '../assets/siteAssets.js';
+import Logo from './Logo.jsx';
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="section pb-10">
         <div className="container-page grid gap-10 lg:grid-cols-[1.4fr_0.8fr_1fr_1fr]">
           <div>
-            <img src={siteAssets.footerMark} alt="RPS Accountants" className="mb-5 h-20 w-20 object-contain" loading="lazy" />
+            <Logo light={true} className="mb-5 h-14" />
             <p className="max-w-md text-sm leading-7 text-white/75">
               We are one of Melbourne's preferred partners for building and growing a business. You focus on your work;
               we help keep the numbers clean, compliant and useful.
@@ -44,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-5 py-5 text-center text-xs text-white/65">
-        (c) 2026 RPS Accountants & Business Advisors. All rights reserved. Design & Developed by WVD.
+        (c) 2026 Capital Edge Accounting. All rights reserved. Design & Developed by WVD.
       </div>
     </footer>
   );

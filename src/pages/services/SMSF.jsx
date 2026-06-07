@@ -8,7 +8,7 @@ const SMSFServices = () => {
   const data = services.find((s) => s.slug === "smsf-accountants") || {
     title: "SMSF Accountants",
     subtitle: "Self-Managed Super Fund (SMSF) Accounting & Administration",
-    summary: "Thinking about a self-managed super fund? RPS Accountants provides SMSF setup and compliance.",
+    summary: "Thinking about a self-managed super fund? Capital Edge Accounting provides SMSF setup and compliance.",
     intro: "SMSFs offer incredible flexibility and control over retirement wealth.",
     sections: []
   };
@@ -46,6 +46,23 @@ const SMSFServices = () => {
                   </span>
                 ))}
               </div>
+            </div>
+            <div className="border-t border-navy/10 pt-6 mt-6">
+              <p className="text-xs font-bold uppercase text-navy/60 tracking-wider mb-3">SMSF Compliance</p>
+              <ul className="space-y-3 text-xs text-navy/80 font-semibold">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Independent Licensed Annual Auditing
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  ATO Regulatory Compliance & Filings
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  CPA Qualified SMSF Advisory Services
+                </li>
+              </ul>
             </div>
           </aside>
 

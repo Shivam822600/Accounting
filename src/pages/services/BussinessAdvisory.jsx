@@ -8,7 +8,7 @@ const BusinessAdvisory = () => {
   const data = services.find((s) => s.slug === "business-advisory") || {
     title: "Business Advisory Service",
     subtitle: "Strategic Business Advisory for Melbourne SMEs and Startups",
-    summary: "From business structuring to GST strategy and growth planning — RPS Accountants delivers practical business advisory.",
+    summary: "From business structuring to GST strategy and growth planning — Capital Edge Accounting delivers practical business advisory.",
     intro: "We believe accounting should look forward, not just backward.",
     sections: []
   };
@@ -46,6 +46,23 @@ const BusinessAdvisory = () => {
                   </span>
                 ))}
               </div>
+            </div>
+            <div className="border-t border-navy/10 pt-6 mt-6">
+              <p className="text-xs font-bold uppercase text-navy/60 tracking-wider mb-3">Advisory Strategy</p>
+              <ul className="space-y-3 text-xs text-navy/80 font-semibold">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Industry Benchmarking Tools
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  CPA-Led Strategic Growth Planning
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Tax Structuring & Minimisation
+                </li>
+              </ul>
             </div>
           </aside>
 

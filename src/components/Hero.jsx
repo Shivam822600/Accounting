@@ -57,7 +57,7 @@ export default function Hero({ eyebrow, title, subtitle, image, primaryLabel = '
 
           <div className="relative w-full">
             {image && (
-              <img src={image} alt="RPS Accountants & Business Advisors" className="w-full h-auto rounded-md object-cover shadow-soft" loading="eager" />
+              <img src={image} alt="Capital Edge Accounting" className="w-full h-auto rounded-md object-cover shadow-soft" loading="eager" />
             )}
           </div>
         </div>

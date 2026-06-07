@@ -66,6 +66,23 @@ const MedicalAccountants = () => {
                 ))}
               </div>
             </div>
+            <div className="border-t border-navy/10 pt-6 mt-6">
+              <p className="text-xs font-bold uppercase text-navy/60 tracking-wider mb-3">Practice Specialties</p>
+              <ul className="space-y-3 text-xs text-navy/80 font-semibold">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Personal Services Income (PSI) Rules
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Service Trust Agreements (AMA Compliance)
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Practice Acquisition & Goodwill Valuation
+                </li>
+              </ul>
+            </div>
           </aside>
 
           {/* Details Content */}

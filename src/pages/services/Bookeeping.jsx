@@ -48,6 +48,23 @@ const BookkeepingAccounting = () => {
                 ))}
               </div>
             </div>
+            <div className="border-t border-navy/10 pt-6 mt-6">
+              <p className="text-xs font-bold uppercase text-navy/60 tracking-wider mb-3">Trust & Compliance</p>
+              <ul className="space-y-3 text-xs text-navy/80 font-semibold">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  CPA Qualified Reviews
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  Xero Platinum Practice
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  100% In-House Processing
+                </li>
+              </ul>
+            </div>
           </aside>
 
           {/* Core Info */}

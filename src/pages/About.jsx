@@ -11,7 +11,7 @@ export default function About() {
         compact
         eyebrow="About Us"
         title="An accounting service that listens to you"
-        subtitle="With RPS Accountants & Business Advisors, your business-related issues are handled by experienced professionals who value clarity, trust and practical support."
+        subtitle="With Capital Edge Accounting & Business Advisors, your business-related issues are handled by experienced professionals who value clarity, trust and practical support."
         image={siteAssets.team}
         primaryTo="/contact"
       />
@@ -27,19 +27,19 @@ export default function About() {
               <span className="block text-5xl font-extrabold text-gold">200+</span>
               <span className="mt-2 block text-sm font-semibold text-ink uppercase tracking-wider">Clients Served</span>
             </div>
-            <img src={siteAssets.about} alt="RPS Accounting Team" className="rounded-md object-cover shadow-soft col-span-2 w-full h-48 lg:h-64" loading="lazy" />
+            <img src={siteAssets.about} alt="Capital Edge Accounting Team" className="rounded-md object-cover shadow-soft col-span-2 w-full h-48 lg:h-64" loading="lazy" />
           </div>
 
           <div>
             <SectionHeader
               eyebrow="Why choose us ?"
-              title="Why choose RPS Accountants & Business Performance Services?"
+              title="Why choose Capital Edge Accounting & Business Performance Services?"
             />
             <p className="body-copy">
-              Accounting and financing can be tricky without the right kind of support and tools. With RPS Accountants & Business Advisors, you and your business-related issues are in safe hands. We are not only experienced, professional and reliable but also take your views and concerns into consideration.
+              Accounting and financing can be tricky without the right kind of support and tools. With Capital Edge Accounting & Business Advisors, you and your business-related issues are in safe hands. We are not only experienced, professional and reliable but also take your views and concerns into consideration.
             </p>
             <p className="body-copy mt-4">
-              Unlike other accounting firms out there, your opinions, references, and worries matter at RPS Accountants & Business Advisors. In addition, we make it a point to resolve all your queries and provide services that will aid your business in growing.
+              Unlike other accounting firms out there, your opinions, references, and worries matter at Capital Edge Accounting & Business Advisors. In addition, we make it a point to resolve all your queries and provide services that will aid your business in growing.
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function About() {
           <SectionHeader
             eyebrow="Our Cases"
             title="What We Have Done"
-            subtitle="At RPS we understand the importance of using technology and staying up-to-date with digital innovations."
+            subtitle="At Capital Edge we understand the importance of using technology and staying up-to-date with digital innovations."
             center
           />
           <div className="grid gap-6 md:grid-cols-3">

@@ -24,7 +24,7 @@ export default function LocationDetail() {
             <p className="body-copy">{location.intro}</p>
           </div>
           <div className="rounded-md bg-mint p-6">
-            <h2 className="text-2xl font-bold text-navy">Why locals choose RPS</h2>
+            <h2 className="text-2xl font-bold text-navy">Why locals choose Capital Edge</h2>
             <div className="mt-5 grid gap-3">
               {['Registered tax agents', 'Fixed fees quoted upfront', 'Named point of contact', 'Remote or in-person support'].map((item) => (
                 <p key={item} className="rounded-md bg-white p-4 text-sm font-semibold text-navy shadow-sm">
