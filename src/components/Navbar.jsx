@@ -118,7 +118,7 @@ export default function Navbar() {
           
           {/* Logo on Left */}
           <Link to="/" className="flex items-center" aria-label="Capital Edge Accounting home">
-            <Logo light={!scrolled} className="h-11 transition-all duration-300" />
+            <Logo light={!scrolled} className={`transition-all duration-300 ${scrolled ? 'h-12' : 'h-16'}`} />
           </Link>
 
           {/* Links Centered/Right-aligned */}
@@ -239,7 +239,7 @@ export default function Navbar() {
           {/* Header */}
           <div>
             <div className="flex h-20 items-center justify-between px-6 border-b border-slate-100">
-              <Logo className="h-9" />
+              <Logo className="h-12" />
               <button
                 type="button"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-50 text-slate-500 hover:text-slate-900 border border-slate-100"

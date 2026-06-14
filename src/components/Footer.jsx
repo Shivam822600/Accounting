@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="section pb-10">
         <div className="container-page grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_0.8fr]">
           <div>
-            <Logo light={true} className="mb-5 h-14" />
+            <Logo light={true} className="mb-5 h-20" />
             <p className="max-w-md text-sm leading-7 text-white/70">
               We are one of Melbourne's preferred partners for building and growing a business. You focus on your work;
               we help keep the numbers clean, compliant and useful.

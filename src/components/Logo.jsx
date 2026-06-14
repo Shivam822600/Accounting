@@ -1,61 +1,51 @@
 import React from 'react';
 
-export default function Logo({ light = false, className = "h-12" }) {
-  return (
-    <div className={`flex items-center gap-3 select-none ${className}`}>
-      {/* Logo Icon: Abstract Geometric Growth + Letter C/E Monogram */}
-      <svg 
-        className="h-full w-auto object-contain" 
-        viewBox="0 0 100 100" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        {/* Modern Diamond / Shield grid background */}
-        <path 
-          d="M50 5L95 27.5V72.5L50 95L5 72.5V27.5L50 5Z" 
-          fill={light ? "rgba(255, 255, 255, 0.05)" : "rgba(12, 27, 51, 0.03)"} 
-          stroke={light ? "rgba(255, 255, 255, 0.15)" : "rgba(12, 27, 51, 0.1)"} 
-          strokeWidth="2"
-        />
-        
-        {/* Dynamic Growth / Ascending Edge bars */}
-        <path 
-          d="M30 65V50C30 47.7909 31.7909 46 34 46H42C44.2091 46 46 47.7909 46 50V65" 
-          fill={light ? "#34D399" : "#10B981"} /* Mint / Green representing growth */
-        />
-        <path 
-          d="M54 65V35C54 32.7909 55.7909 31 58 31H66C68.2091 31 70 32.7909 70 35V65" 
-          fill={light ? "#FBBF24" : "#D4AF37"} /* Gold representing capital/wealth */
-        />
-        
-        {/* Swooping 'Edge' ribbon that curves up like a chart arrow */}
-        <path 
-          d="M20 65C30 55 45 42 60 40L75 35" 
-          stroke={light ? "#FFFFFF" : "#0C1B33"} 
-          strokeWidth="6" 
-          strokeLinecap="round"
-        />
-        <path 
-          d="M65 28L78 33L73 46" 
-          stroke={light ? "#FFFFFF" : "#0C1B33"} 
-          strokeWidth="5" 
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+export default function Logo({ light = false, className = "h-16" }) {
+  const primaryColor = light ? '#ffffff' : '#16233b';
+  const secondaryColor = '#c39b48';
+  const subtitleColor = light ? '#cbd5e1' : '#6c6757';
 
-      {/* Typography */}
-      <div className="flex flex-col justify-center">
-        <div className="flex items-center">
-          <span className={`font-extrabold tracking-tight text-xl leading-none ${light ? 'text-white' : 'text-navy'}`}>
-            Capital <span className={light ? 'text-gold' : 'text-navy'}>Edge</span>
-          </span>
-        </div>
-        <span className={`text-[10px] font-bold tracking-[0.25em] uppercase mt-1 leading-none ${light ? 'text-white/60' : 'text-slate-500'}`}>
-          Accounting
-        </span>
-      </div>
+  return (
+    <div className={`flex items-center select-none ${className}`}>
+      <svg
+        viewBox="0 0 320 120"
+        role="img"
+        aria-label="Capital Edge Accounting"
+        className="h-full w-auto"
+      >
+        {/* C with a sharp diagonal cut */}
+        <g transform="translate(8,12)">
+          <path
+            d="M84 8 A40 40 0 1 0 84 88 L66 70 A23 23 0 1 1 66 26 Z"
+            fill={primaryColor}
+          />
+          {/* the sliced 'edge' */}
+          <path
+            d="M84 8 L66 26 L66 70 L84 88 L84 56 L60 48 L84 40 Z"
+            fill={secondaryColor}
+          />
+        </g>
+        <text x="118" y="52" className="wm" fontFamily="Archivo, sans-serif" fontWeight="800">
+          <tspan className="a" fontSize="30" fill={primaryColor}>CAPITAL</tspan>
+        </text>
+        <text x="118" y="84" className="wm" fontFamily="Archivo, sans-serif" fontWeight="800">
+          <tspan className="b" fontSize="30" fill={primaryColor}>EDGE</tspan>
+        </text>
+        <line x1="208" y1="63" x2="300" y2="63" stroke={secondaryColor} strokeWidth="2"></line>
+        <text
+          x="208"
+          y="80"
+          fontFamily="Archivo, sans-serif"
+          fontSize="9.5"
+          fontWeight="600"
+          letterSpacing="3.2"
+          fill={subtitleColor}
+        >
+          ACCOUNTING
+        </text>
+      </svg>
     </div>
   );
 }
+
+
