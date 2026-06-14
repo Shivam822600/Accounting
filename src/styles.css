@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +10,11 @@
   }
 
   body {
-    @apply bg-white font-sans text-ink antialiased;
+    @apply bg-white font-sans text-slate-700 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-slate-900;
   }
 
   img {
@@ -16,9 +22,32 @@
   }
 }
 
+@layer utilities {
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .bg-glass-dark {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
 @layer components {
   .section {
-    @apply px-5 py-16 sm:px-6 lg:px-8 lg:py-24;
+    @apply px-5 py-20 sm:px-6 lg:px-8 lg:py-28;
   }
 
   .container-page {
@@ -26,30 +55,34 @@
   }
 
   .eyebrow {
-    @apply text-sm font-semibold uppercase tracking-[0.18em] text-gold;
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706];
   }
 
   .heading-xl {
-    @apply text-4xl font-bold leading-tight text-navy sm:text-5xl lg:text-6xl;
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold font-serif leading-tight text-[#0F172A];
   }
 
   .heading-lg {
-    @apply text-3xl font-bold leading-tight text-navy sm:text-4xl;
+    @apply text-3xl sm:text-4xl font-bold font-serif leading-tight text-[#0F172A];
   }
 
   .body-copy {
-    @apply text-base leading-8 text-ink;
+    @apply text-base leading-8 text-slate-600 font-sans;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-gold px-6 py-3 text-sm font-bold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-[#cda44b] focus:outline-none focus:ring-4 focus:ring-gold/30;
+    @apply inline-flex items-center justify-center rounded-full bg-[#d97706] px-6 py-3 text-sm font-bold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-[#b45309] focus:outline-none focus:ring-4 focus:ring-[#d97706]/30;
+  }
+
+  .btn-pill {
+    @apply inline-flex items-center justify-center rounded-full bg-[#d97706] px-6 py-2.5 text-sm font-bold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-[#b45309] focus:outline-none focus:ring-4 focus:ring-[#d97706]/30;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-md border border-gold px-6 py-3 text-sm font-bold text-gold transition hover:bg-gold hover:text-white focus:outline-none focus:ring-4 focus:ring-gold/20;
+    @apply inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-bold text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-100;
   }
 
   .btn-secondary-light {
-    @apply inline-flex items-center justify-center rounded-md border border-white/40 px-6 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-navy focus:outline-none focus:ring-4 focus:ring-white/20;
+    @apply inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-charcoal focus:outline-none focus:ring-4 focus:ring-white/20;
   }
 }

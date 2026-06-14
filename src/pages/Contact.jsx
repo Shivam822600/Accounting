@@ -25,15 +25,15 @@ export default function Contact() {
           <ContactForm />
         </div>
       </section>
-      <section className="h-[420px] bg-slate-100">
+      {/* <section className="h-[420px] bg-slate-100">
         <iframe
           title="Capital Edge Accounting location"
-          src="https://www.google.com/maps?q=136%20Gateway%20Boulevard%2C%20Epping%2C%20VIC%2C%203076&output=embed"
+          src="https://www.google.com/maps?q=453%20Lithgow%20Street%2C%20Beveridge%2C%20VIC%2C%203753&output=embed"
           className="h-full w-full border-0"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
-      </section>
+      </section> */}
     </>
   );
 }

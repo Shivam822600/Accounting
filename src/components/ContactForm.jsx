@@ -1,28 +1,49 @@
 import { useState } from 'react';
-import { services } from '../data/siteData.js';
 
 const initialState = {
   name: '',
   email: '',
   phone: '',
-  service: '',
   message: '',
 };
 
 export default function ContactForm() {
   const [form, setForm] = useState(initialState);
-  const [submitted, setSubmitted] = useState(false);
+  const [result, setResult] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   function handleChange(event) {
     const { name, value } = event.target;
     setForm((current) => ({ ...current, [name]: value }));
   }
 
-  function handleSubmit(event) {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setSubmitted(true);
-    setForm(initialState);
-  }
+    setIsSubmitting(true);
+    setResult("Sending...");
+
+    try {
+      const formData = new FormData(event.target);
+      formData.append("access_key", "8a2d9235-7f38-4493-8fd5-f99db60eccab");
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setResult("Success! Your message has been sent.");
+        setForm(initialState);
+      } else {
+        setResult("Error: " + (data.message || "Failed to submit."));
+      }
+    } catch (error) {
+      setResult("Error: Something went wrong.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="rounded-md border border-slate-200 bg-white p-6 shadow-soft sm:p-8">
@@ -34,6 +55,7 @@ export default function ContactForm() {
             value={form.name}
             onChange={handleChange}
             required
+            disabled={isSubmitting}
             className="rounded-md border border-slate-200 px-4 py-3 font-normal text-ink outline-none focus:border-gold focus:ring-4 focus:ring-gold/20"
           />
         </label>
@@ -45,6 +67,7 @@ export default function ContactForm() {
             value={form.email}
             onChange={handleChange}
             required
+            disabled={isSubmitting}
             className="rounded-md border border-slate-200 px-4 py-3 font-normal text-ink outline-none focus:border-gold focus:ring-4 focus:ring-gold/20"
           />
         </label>
@@ -54,25 +77,11 @@ export default function ContactForm() {
             name="phone"
             value={form.phone}
             onChange={handleChange}
+            disabled={isSubmitting}
             className="rounded-md border border-slate-200 px-4 py-3 font-normal text-ink outline-none focus:border-gold focus:ring-4 focus:ring-gold/20"
           />
         </label>
-        <label className="grid gap-2 text-sm font-semibold text-navy">
-          Select service
-          <select
-            name="service"
-            value={form.service}
-            onChange={handleChange}
-            className="rounded-md border border-slate-200 px-4 py-3 font-normal text-ink outline-none focus:border-gold focus:ring-4 focus:ring-gold/20"
-          >
-            <option value="">Select service</option>
-            {services.map((service) => (
-              <option key={service.slug} value={service.title}>
-                {service.title}
-              </option>
-            ))}
-          </select>
-        </label>
+
       </div>
       <label className="mt-5 grid gap-2 text-sm font-semibold text-navy">
         Message
@@ -81,13 +90,21 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           rows={5}
+          required
+          disabled={isSubmitting}
           className="rounded-md border border-slate-200 px-4 py-3 font-normal text-ink outline-none focus:border-gold focus:ring-4 focus:ring-gold/20"
         />
       </label>
-      <button type="submit" className="btn-primary mt-6 w-full sm:w-auto">
-        Submit Now
+      <button type="submit" disabled={isSubmitting} className="btn-primary mt-6 w-full sm:w-auto disabled:opacity-50">
+        {isSubmitting ? "Submitting..." : "Submit Now"}
       </button>
-      {submitted && <p className="mt-4 text-sm font-semibold text-emerald-700">Thanks. Your enquiry has been captured locally.</p>}
+      {result && (
+        <p className={`mt-4 text-sm font-semibold ${
+          result.startsWith("Success") ? "text-emerald-700" : result.startsWith("Error") ? "text-red-600" : "text-amber-600"
+        }`}>
+          {result}
+        </p>
+      )}
     </form>
   );
 }

@@ -48,7 +48,7 @@ const MedicalAccountants = () => {
         <div className="container-page grid gap-12 lg:grid-cols-[1fr_1.3fr] lg:items-start">
           
           {/* Sidebar */}
-          <aside className="sticky top-28 rounded-2xl bg-mint p-8 shadow-sm">
+          <aside className="lg:sticky lg:top-28 rounded-2xl bg-mint p-8 shadow-sm">
             <span className="eyebrow">Medical Specialists</span>
             <h2 className="text-3xl font-extrabold text-navy mt-3 mb-5 leading-snug">
               Focus on Patients, We Do the Numbers

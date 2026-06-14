@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { contact } from "../../data/siteData.js";
 
 const locations = [
@@ -9,12 +10,12 @@ const locations = [
     isHQ: true,
     icon: "🏢",
     tagline: "Our main office — walk in, drive in, or connect online.",
-    address: "136 Gateway Boulevard, Epping VIC 3076",
+    address: "453 Lithgow Street, Beveridge VIC 3753",
     phone: "1300 110 120",
     email: "admin@capitaledgeaccounting.com.au",
     hours: "Mon–Sat · 9:00 AM – 5:00 PM",
-    distance: "Epping is our registered HQ",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.592378928538!2d144.99728007523447!3d-37.6352750238572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65106014faa8f%3A0x1b757606388e99e9!2sRPS%20Accountants%20%26%20Business%20Advisors!5e0!3m2!1sen!2sau!4v1778144282369!5m2!1sen!2sau",
+    distance: "Beveridge is our registered HQ",
+    mapUrl: "https://maps.google.com/maps?q=453%20Lithgow%20Street%2C%20Beveridge%2C%20VIC%2C%203753&t=&z=13&ie=UTF8&iwloc=&output=embed",
     bookingUrl: "https://calendly.com/capitaledgeaccounting",
     description: "A CPA-led practice and registered tax agent serving individuals, sole traders, and growing businesses across Melbourne's northern growth corridor — Epping, Wollert, Mernda, South Morang and beyond.",
     whoWeServe: [
@@ -40,7 +41,7 @@ const locations = [
       { title: "Medical Accountants", desc: "Specialist tax and structuring for GPs, specialists, dentists, and allied health professionals." },
     ],
     whyUs: [
-      "Real walk-in office with free parking at 136 Gateway Boulevard",
+      "Real walk-in office with free parking at 453 Lithgow Street",
       "CPA-led, nothing offshored — every return reviewed locally",
       "TPB Registered Tax Agent No. 16657196248",
       "Fixed-fee pricing quoted upfront, no surprises",
@@ -60,7 +61,7 @@ const locations = [
     isHQ: false,
     icon: "🎓",
     tagline: "Serving La Trobe University staff, students & healthcare professionals.",
-    address: "136 Gateway Boulevard, Epping VIC 3076 (15 min via Plenty Rd)",
+    address: "453 Lithgow Street, Beveridge VIC 3753",
     phone: "1300 110 120",
     email: "admin@capitaledgeaccounting.com.au",
     hours: "Mon–Sat · 9:00 AM – 5:00 PM",
@@ -105,7 +106,7 @@ const locations = [
     isHQ: false,
     icon: "🔧",
     tagline: "For Lalor tradies, sole traders & multicultural small businesses.",
-    address: "136 Gateway Boulevard, Epping VIC 3076 (10 min from Lalor)",
+    address: "453 Lithgow Street, Beveridge VIC 3753",
     phone: "1300 110 120",
     email: "admin@capitaledgeaccounting.com.au",
     hours: "Mon–Sat · 9:00 AM – 5:00 PM",
@@ -151,7 +152,7 @@ const locations = [
     isHQ: false,
     icon: "🏡",
     tagline: "Trusted tax returns for Mill Park families & owner-operators.",
-    address: "136 Gateway Boulevard, Epping VIC 3076 (nearby via Plenty Road)",
+    address: "453 Lithgow Street, Beveridge VIC 3753",
     phone: "1300 110 120",
     email: "admin@capitaledgeaccounting.com.au",
     hours: "Mon–Sat · 9:00 AM – 5:00 PM",
@@ -197,7 +198,7 @@ const locations = [
     isHQ: false,
     icon: "🏘️",
     tagline: "For South Morang's fast-growing community & new business owners.",
-    address: "136 Gateway Boulevard, Epping VIC 3076 (adjacent suburb)",
+    address: "453 Lithgow Street, Beveridge VIC 3753",
     phone: "1300 110 120",
     email: "admin@capitaledgeaccounting.com.au",
     hours: "Mon–Sat · 9:00 AM – 5:00 PM",
@@ -234,7 +235,7 @@ const locations = [
       { q: "I've just started a business in South Morang — where do I begin?", a: "Start with an ABN registration and decide your structure (sole trader, company, or trust). We offer a free 30-minute consult to walk you through the options and give you a clear plan." },
       { q: "We just bought our first investment property — what tax do we need to think about?", a: "You'll need to declare rental income, claim deductions (including a depreciation schedule if it's a new build), and plan for CGT when you sell. We handle all of this and can also plan for when you eventually sell." },
       { q: "Can I set up an SMSF through Capital Edge?", a: "Yes. We handle SMSF establishment, annual compliance, member statements and audit coordination. We'll also help you understand whether an SMSF is the right choice given your balance and goals." },
-      { q: "How close is your office to South Morang?", a: "We're at 136 Gateway Boulevard, Epping — South Morang and Epping are adjacent suburbs. It's typically a 5–10 minute drive." },
+      { q: "How close is your office to South Morang?", a: "We're at 453 Lithgow Street, Beveridge — we serve South Morang clients remotely or via our office." }
     ],
   },
   {
@@ -243,7 +244,7 @@ const locations = [
     isHQ: false,
     icon: "🏭",
     tagline: "Specialist accounting for Thomastown's industrial & manufacturing businesses.",
-    address: "136 Gateway Boulevard, Epping VIC 3076 (10 min from Thomastown)",
+    address: "453 Lithgow Street, Beveridge VIC 3753",
     phone: "1300 110 120",
     email: "admin@capitaledgeaccounting.com.au",
     hours: "Mon–Sat · 9:00 AM – 5:00 PM",
@@ -289,7 +290,7 @@ const locations = [
     isHQ: false,
     icon: "🌾",
     tagline: "Local tax advice for Whittlesea's rural landowners, small businesses & new estates.",
-    address: "136 Gateway Boulevard, Epping VIC 3076 (15–20 min from Whittlesea township)",
+    address: "453 Lithgow Street, Beveridge VIC 3753",
     phone: "1300 110 120",
     email: "admin@capitaledgeaccounting.com.au",
     hours: "Mon–Sat · 9:00 AM – 5:00 PM",
@@ -434,14 +435,12 @@ function LocationModal({ loc, onClose }) {
                 </div>
               )}
               <div className="flex flex-wrap gap-3 pt-2">
-                <a
-                  href={loc.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/contact"
                   className="btn-primary py-2.5 px-6"
                 >
                   Book Free Consultation
-                </a>
+                </Link>
                 <a
                   href={`tel:${loc.phone.replace(/\s+/g, '')}`}
                   className="btn-secondary py-2.5 px-6"
@@ -521,14 +520,12 @@ function LocationModal({ loc, onClose }) {
           <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
             Registered Tax Agent · No. 16657196248 · TPB
           </div>
-          <a
-            href={loc.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/contact"
             className="text-xs font-bold text-navy hover:text-gold transition-colors inline-flex items-center gap-1"
           >
             Book Online Consult →
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -607,15 +604,13 @@ export default function LocationSection() {
               <span className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-navy transition-colors group-hover:border-gold/30">
                 View Full Details →
               </span>
-              <a
-                href={hq.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/contact"
                 onClick={(e) => e.stopPropagation()}
                 className="btn-primary py-2.5 px-5 text-xs"
               >
                 Book Consultation
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -670,14 +665,12 @@ export default function LocationSection() {
             We support individuals, investors, and business clients remotely all across Victoria and Australia via phone, email, and secure Zoom consultations.
           </p>
           <div className="mt-8">
-            <a
-              href="https://calendly.com/capitaledgeaccounting"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/contact"
               className="btn-primary bg-gold text-navy hover:bg-white hover:text-navy border-none py-3 px-8 text-sm"
             >
               Book a Free Online Consult
-            </a>
+            </Link>
           </div>
         </div>
       </section>
